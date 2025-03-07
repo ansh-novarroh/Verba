@@ -5,6 +5,7 @@ services:
     image: traefik:v2.5
     container_name: traefik
     command:
+      - "--api=true"
       - "--api.dashboard=true"
       - "--providers.docker=true"  # Enable Docker provider for automatic service discovery
       - "--entryPoints.web.address=:80"  # HTTP entry point for all traffic
@@ -14,6 +15,7 @@ services:
     ports:
       - "80:80"    # HTTP Traffic
       - "443:443"  # HTTPS Traffic (Optional)
+      - "8081:8081" 
     networks:
       - ollama-docker
     volumes:
@@ -82,11 +84,8 @@ services:
 
   ollama:
     image: ollama/ollama:latest
-    ports:
-      - "7869:11434"
     volumes:
       - ./ollama/ollama:/root/.ollama
-    container_name: ollama
     pull_policy: always
     tty: true
     restart: always
