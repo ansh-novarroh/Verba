@@ -314,7 +314,7 @@ const BasicSettingView: React.FC<BasicSettingViewProps> = ({
         <div className="flex gap-2 items-center text-text-verba">
           <p className="flex min-w-[8vw]"></p>
           <p className="text-sm text-text-alt-verba text-start">
-            Use default folder name or change it by removing existing and adding new
+            Use default folder name or create a new one 
           </p>
         </div>
 
