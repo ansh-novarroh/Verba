@@ -1,4 +1,31 @@
+version: '3.8'
+
 services:
+  traefik:
+    image: traefik:v2.5
+    container_name: traefik
+    command:
+      - "--api=true"
+      - "--api.dashboard=true"
+      - "--providers.docker=true"  # Enable Docker provider for automatic service discovery
+      - "--entryPoints.web.address=:80"  # HTTP entry point for all traffic
+      - "--entryPoints.websecure.address=:443"  # HTTPS entry point (optional, requires certs)
+      - "--providers.docker.network=ollama-docker"  # Use ollama-docker network
+      - "--log.level=INFO"
+    ports:
+      - "80:80"    # HTTP Traffic
+      - "443:443"  # HTTPS Traffic (Optional)
+      - "8081:8081" 
+    networks:
+      - ollama-docker
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock:ro"  # Allow Traefik to communicate with Docker
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.api.rule=Host(`traefik.localhost`)"  # Dashboard access
+      - "traefik.http.routers.api.service=api@internal"
+      - "traefik.http.routers.api.entrypoints=web"
+
   verba:
     build:
       context: ./
@@ -18,10 +45,12 @@ services:
       timeout: 10s
       retries: 5
       start_period: 10s
-    extra_hosts:
-      - "host.docker.internal:host-gateway"  # Map Docker to local machine
     networks:
       - ollama-docker
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.verba.rule=Host(`verba.localhost`)"
+      - "traefik.http.services.verba.loadbalancer.server.port=8000"
 
   weaviate:
     image: semitechnologies/weaviate:1.25.10
@@ -55,6 +84,27 @@ services:
       - .docker.env
     networks:
       - ollama-docker
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.weaviate.rule=Host(`weaviate.localhost`)"
+      - "traefik.http.services.weaviate.loadbalancer.server.port=8080"
+
+  ollama:
+    image: ollama/ollama:latest
+    volumes:
+      - ./ollama/ollama:/root/.ollama
+    pull_policy: always
+    tty: true
+    restart: always
+    environment:
+      - OLLAMA_KEEP_ALIVE=24h
+      - OLLAMA_HOST=0.0.0.0
+    networks:
+      - ollama-docker
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.ollama.rule=Host(`ollama.localhost`)"
+      - "traefik.http.services.ollama.loadbalancer.server.port=11434"
 
 volumes:
   weaviate_data: {}
@@ -62,28 +112,3 @@ volumes:
 networks:
   ollama-docker:
     external: false
-
-
-  # ollama:
-  #   image: ollama/ollama:latest
-  #   ports:
-  #     - "7869:11434"
-  #   volumes:
-  #     - ./ollama/ollama:/root/.ollama
-  #   container_name: ollama
-  #   pull_policy: always
-  #   tty: true
-  #   restart: always
-  #   environment:
-  #     - OLLAMA_KEEP_ALIVE=24h
-  #     - OLLAMA_HOST=0.0.0.0
-  #   networks:
-  #     - ollama-docker
-  #   deploy:
-  #     resources:
-  #       limits:
-  #         memory: 6G  # Maximum 6GB RAM for Ollama
-  #         cpus: "3.0" # Maximum 3 CPU cores
-  #       reservations:
-  #         memory: 3G  # At least 3GB RAM allocated
-  #         cpus: "1.5" # At least 1.5 CPU cores reserved
