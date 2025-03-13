@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Verba",
-  description: "The GoldenRAGtriever",
+  title: "Vijil RAG Agent",
+  description: "Vijil RAG Agent Interface",
 };
 
 export default function RootLayout({
@@ -13,8 +13,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <link rel="icon" href="icon.ico" />
-      <link rel="icon" href="static/icon.ico" />
+      <link rel="icon" href="vijil_icon.ico" />
+      <link rel="icon" href="static/vijil_icon.ico" />
       <body>{children}</body>
     </html>
   );

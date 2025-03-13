@@ -35,7 +35,7 @@ load_dotenv()
 
 
 class VerbaManager:
-    """Manages all Verba Components."""
+    """Manages all Vijil RAG Agent Components."""
 
     def __init__(self) -> None:
         self.reader_manager = ReaderManager()
@@ -105,7 +105,7 @@ class VerbaManager:
                 client, fileConfig.filename
             )
             if duplicate_uuid is not None and not fileConfig.overwrite:
-                raise Exception(f"{fileConfig.filename} already exists in Verba")
+                raise Exception(f"{fileConfig.filename} already exists in Vijil RAG Agent")
             elif duplicate_uuid is not None and fileConfig.overwrite:
                 await self.weaviate_manager.delete_document(client, duplicate_uuid)
                 await logger.send_report(
@@ -208,7 +208,7 @@ class VerbaManager:
                 client, document.title
             )
             if duplicate_uuid is not None and not currentFileConfig.overwrite:
-                raise Exception(f"{document.title} already exists in Verba")
+                raise Exception(f"{document.title} already exists in Vijil RAG Agent")
             elif duplicate_uuid is not None and currentFileConfig.overwrite:
                 await self.weaviate_manager.delete_document(client, duplicate_uuid)
 
@@ -273,7 +273,7 @@ class VerbaManager:
     # Configuration
 
     def create_config(self) -> dict:
-        """Creates the RAG Configuration and returns the full Verba Config with also Settings"""
+        """Creates the RAG Configuration and returns the full Vijil RAG Agent Config with also Settings"""
 
         available_environments = self.environment_variables
         available_libraries = self.installed_libraries

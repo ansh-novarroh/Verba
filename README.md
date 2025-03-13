@@ -1,22 +1,22 @@
-# Verba
+# Vijil RAG Agent
 
 ## The Golden RAGtriever - Community Edition ✨
 
 [![Weaviate](https://img.shields.io/static/v1?label=powered%20by&message=Weaviate%20%E2%9D%A4&color=green&style=flat-square)](https://weaviate.io/)
 [![PyPi downloads](https://static.pepy.tech/personalized-badge/goldenverba?period=total&units=international_system&left_color=grey&right_color=orange&left_text=pip%20downloads)](https://pypi.org/project/goldenverba/) [![Docker support](https://img.shields.io/badge/Docker_support-%E2%9C%93-4c1?style=flat-square&logo=docker&logoColor=white)](https://docs.docker.com/get-started/) [![Demo](https://img.shields.io/badge/Check%20out%20the%20demo!-yellow?&style=flat-square&logo=react&logoColor=white)](https://verba.weaviate.io/)
 
-Welcome to Verba: The Golden RAGtriever, an community-driven open-source application designed to offer an end-to-end, streamlined, and user-friendly interface for Retrieval-Augmented Generation (RAG) out of the box. In just a few easy steps, explore your datasets and extract insights with ease, either locally with Ollama and Huggingface or through LLM providers such as Anthrophic, Cohere, and OpenAI. This project is built with and for the community, please be aware that it might not be maintained with the same urgency as other Weaviate production applications. Feel free to contribute to the project and help us make Verba even better! <3
+Welcome to Vijil RAG Agent: The Golden RAGtriever, an community-driven open-source application designed to offer an end-to-end, streamlined, and user-friendly interface for Retrieval-Augmented Generation (RAG) out of the box. In just a few easy steps, explore your datasets and extract insights with ease, either locally with Ollama and Huggingface or through LLM providers such as Anthrophic, Cohere, and OpenAI. This project is built with and for the community, please be aware that it might not be maintained with the same urgency as other Weaviate production applications. Feel free to contribute to the project and help us make Vijil RAG Agent even better! <3
 
 ```
 pip install goldenverba
 ```
 
-![Demo of Verba](https://github.com/weaviate/Verba/blob/2.0.0/img/verba.gif)
+![Demo of Vijil RAG Agent](https://github.com/weaviate/Vijil RAG Agent/blob/2.0.0/img/verba.gif)
 
-- [Verba](#verba)
-  - [🎯 What Is Verba?](#what-is-verba)
+- [Vijil RAG Agent](#verba)
+  - [🎯 What Is Vijil RAG Agent?](#what-is-verba)
   - [✨ Features](#feature-lists)
-- [✨ Getting Started with Verba](#getting-started-with-verba)
+- [✨ Getting Started with Vijil RAG Agent](#getting-started-with-verba)
 - [🔑 API Keys](#api-keys)
   - [Weaviate](#weaviate)
   - [Ollama](#ollama)
@@ -29,22 +29,22 @@ pip install goldenverba
 - [Quickstart: Deploy with pip](#how-to-deploy-with-pip)
 - [Quickstart: Build from Source](#how-to-build-from-source)
 - [Quickstart: Deploy with Docker](#how-to-install-verba-with-docker)
-- [💾 Verba Walkthrough](#️verba-walkthrough)
+- [💾 Vijil RAG Agent Walkthrough](#️verba-walkthrough)
 - [💖 Open Source Contribution](#open-source-contribution)
 - [🚩 Known Issues](#known-issues)
 - [❔FAQ](#faq)
 
-## What Is Verba?
+## What Is Vijil RAG Agent?
 
-Verba is a fully-customizable personal assistant utilizing [Retrieval Augmented Generation (RAG)](https://weaviate.io/rag#:~:text=RAG%20with%20Weaviate,accuracy%20of%20AI%2Dgenerated%20content.) for querying and interacting with your data, **either locally or deployed via cloud**. Resolve questions around your documents, cross-reference multiple data points or gain insights from existing knowledge bases. Verba combines state-of-the-art RAG techniques with Weaviate's context-aware database. Choose between different RAG frameworks, data types, chunking & retrieving techniques, and LLM providers based on your individual use-case.
+Vijil RAG Agent is a fully-customizable personal assistant utilizing [Retrieval Augmented Generation (RAG)](https://weaviate.io/rag#:~:text=RAG%20with%20Weaviate,accuracy%20of%20AI%2Dgenerated%20content.) for querying and interacting with your data, **either locally or deployed via cloud**. Resolve questions around your documents, cross-reference multiple data points or gain insights from existing knowledge bases. Vijil RAG Agent combines state-of-the-art RAG techniques with Weaviate's context-aware database. Choose between different RAG frameworks, data types, chunking & retrieving techniques, and LLM providers based on your individual use-case.
 
 ## Open Source Spirit
 
 **Weaviate** is proud to offer this open-source project for the community. While we strive to address issues as fast as we can, please understand that it may not be maintained with the same rigor as production software. We welcome and encourage community contributions to help keep it running smoothly. Your support in fixing open issues quickly is greatly appreciated.
 
-### Watch our newest Verba video here:
+### Watch our newest Vijil RAG Agent video here:
 
-[![VIDEO LINK](https://github.com/weaviate/Verba/blob/main/img/thumbnail.png)](https://www.youtube.com/watch?v=2VCy-YjRRhA&t=40s&ab_channel=Weaviate%E2%80%A2VectorDatabase)
+[![VIDEO LINK](https://github.com/weaviate/Vijil RAG Agent/blob/main/img/thumbnail.png)](https://www.youtube.com/watch?v=2VCy-YjRRhA&t=40s&ab_channel=Weaviate%E2%80%A2VectorDatabase)
 
 ## Feature Lists
 
@@ -74,16 +74,16 @@ Verba is a fully-customizable personal assistant utilizing [Retrieval Augmented 
 | [UnstructuredIO](https://docs.unstructured.io/welcome)   | ✅          | Import Data through Unstructured               |
 | [Firecrawl](https://www.firecrawl.dev/)                  | ✅          | Scrape and Crawl URL through Firecrawl         |
 | [UpstageDocumentParse](https://upstage.ai/)              | ✅          | Parse Documents through Upstage Document AI    |
-| PDF Ingestion                                            | ✅          | Import PDF into Verba                          |
+| PDF Ingestion                                            | ✅          | Import PDF into Vijil RAG Agent                          |
 | GitHub & GitLab                                          | ✅          | Import Files from Github and GitLab            |
-| CSV/XLSX Ingestion                                       | ✅          | Import Table Data into Verba                   |
+| CSV/XLSX Ingestion                                       | ✅          | Import Table Data into Vijil RAG Agent                   |
 | .DOCX                                                    | ✅          | Import .docx files                             |
 | Multi-Modal (using [AssemblyAI](https://assemblyai.com)) | ✅          | Import and Transcribe Audio through AssemblyAI |
 
 | ✨ RAG Features         | Implemented     | Description                                                               |
 | ----------------------- | --------------- | ------------------------------------------------------------------------- |
 | Hybrid Search           | ✅              | Semantic Search combined with Keyword Search                              |
-| Autocomplete Suggestion | ✅              | Verba suggests autocompletion                                             |
+| Autocomplete Suggestion | ✅              | Vijil RAG Agent suggests autocompletion                                             |
 | Filtering               | ✅              | Apply Filters (e.g. documents, document types etc.) before performing RAG |
 | Customizable Metadata   | ✅              | Free control over Metadata                                                |
 | Async Ingestion         | ✅              | Ingest data asynchronously to speed up the process                        |
@@ -106,10 +106,10 @@ Verba is a fully-customizable personal assistant utilizing [Retrieval Augmented 
 
 | 🆒 Cool Bonus            | Implemented     | Description                                             |
 | ------------------------ | --------------- | ------------------------------------------------------- |
-| Docker Support           | ✅              | Verba is deployable via Docker                          |
-| Customizable Frontend    | ✅              | Verba's frontend is fully-customizable via the frontend |
+| Docker Support           | ✅              | Vijil RAG Agent is deployable via Docker                          |
+| Customizable Frontend    | ✅              | Vijil RAG Agent's frontend is fully-customizable via the frontend |
 | Vector Viewer            | ✅              | Visualize your data in 3D                               |
-| Multi-User Collaboration | out of scope ❌ | Multi-User Collaboration in Verba                       |
+| Multi-User Collaboration | out of scope ❌ | Multi-User Collaboration in Vijil RAG Agent                       |
 
 | 🤝 RAG Libraries | Implemented | Description                        |
 | ---------------- | ----------- | ---------------------------------- |
@@ -119,13 +119,13 @@ Verba is a fully-customizable personal assistant utilizing [Retrieval Augmented 
 
 > Something is missing? Feel free to create a new issue or discussion with your idea!
 
-![Showcase of Verba](https://github.com/weaviate/Verba/blob/2.0.0/img/verba_screen.png)
+![Showcase of Vijil RAG Agent](https://github.com/weaviate/Vijil RAG Agent/blob/2.0.0/img/verba_screen.png)
 
 ---
 
-# Getting Started with Verba
+# Getting Started with Vijil RAG Agent
 
-You have three deployment options for Verba:
+You have three deployment options for Vijil RAG Agent:
 
 - Install via pip
 
@@ -136,7 +136,7 @@ pip install goldenverba
 - Build from Source
 
 ```
-git clone https://github.com/weaviate/Verba
+git clone https://github.com/weaviate/Vijil RAG Agent
 
 pip install -e .
 ```
@@ -146,7 +146,7 @@ pip install -e .
 **Prerequisites**: If you're not using Docker, ensure that you have `Python >=3.10.0,<3.13.0` installed on your system.
 
 ```
-git clone https://github.com/weaviate/Verba
+git clone https://github.com/weaviate/Vijil RAG Agent
 
 docker compose --env-file <your-env-file> up -d --build
 ```
@@ -155,7 +155,7 @@ If you're unfamiliar with Python and Virtual Environments, please read the [pyth
 
 # API Keys and Environment Variables
 
-You can set all API keys in the Verba frontend, but to make your life easier, we can also prepare a `.env` file in which Verba will automatically look for the keys. Create a `.env` in the same directory you want to start Verba in. You can find an `.env.example` file in the [goldenverba](./goldenverba/.env.example) directory.
+You can set all API keys in the Vijil RAG Agent frontend, but to make your life easier, we can also prepare a `.env` file in which Vijil RAG Agent will automatically look for the keys. Create a `.env` in the same directory you want to start Vijil RAG Agent in. You can find an `.env.example` file in the [goldenverba](./goldenverba/.env.example) directory.
 
 > Make sure to only set environment variables you intend to use, environment variables with missing or incorrect values may lead to errors.
 
@@ -185,35 +185,35 @@ Below is a comprehensive list of the API keys and variables you may require:
 | UPSTAGE_BASE_URL       | URL to Upstage instance                                    | Models                                                                                                                        |
 | DEFAULT_DEPLOYMENT     | Local, Weaviate, Custom, Docker                            | Set the default deployment mode                                                                                               |
 
-![API Keys in Verba](https://github.com/weaviate/Verba/blob/2.0.0/img/api_screen.png)
+![API Keys in Vijil RAG Agent](https://github.com/weaviate/Vijil RAG Agent/blob/2.0.0/img/api_screen.png)
 
 ## Weaviate
 
-Verba provides flexibility in connecting to Weaviate instances based on your needs. You have three options:
+Vijil RAG Agent provides flexibility in connecting to Weaviate instances based on your needs. You have three options:
 
 1. **Local Deployment**: Use Weaviate Embedded which runs locally on your device (except Windows, choose the Docker/Cloud Deployment)
-2. **Docker Deployment**: Choose this option when you're running Verba's Dockerfile.
-3. **Cloud Deployment**: Use an existing Weaviate instance hosted on WCD to run Verba
+2. **Docker Deployment**: Choose this option when you're running Vijil RAG Agent's Dockerfile.
+3. **Cloud Deployment**: Use an existing Weaviate instance hosted on WCD to run Vijil RAG Agent
 
 **💻 Weaviate Embedded**
-Embedded Weaviate is a deployment model that runs a Weaviate instance from your application code rather than from a stand-alone Weaviate server installation. When you run Verba in `Local Deployment`, it will setup and manage Embedded Weaviate in the background. Please note that Weaviate Embedded is not supported on Windows and is in Experimental Mode which can bring unexpected errors. We recommend using the Docker Deployment or Cloud Deployment instead. You can read more about Weaviate Embedded [here](https://weaviate.io/developers/weaviate/installation/embedded).
+Embedded Weaviate is a deployment model that runs a Weaviate instance from your application code rather than from a stand-alone Weaviate server installation. When you run Vijil RAG Agent in `Local Deployment`, it will setup and manage Embedded Weaviate in the background. Please note that Weaviate Embedded is not supported on Windows and is in Experimental Mode which can bring unexpected errors. We recommend using the Docker Deployment or Cloud Deployment instead. You can read more about Weaviate Embedded [here](https://weaviate.io/developers/weaviate/installation/embedded).
 
 **🌩️ Weaviate Cloud Deployment (WCD)**
 
 If you prefer a cloud-based solution, Weaviate Cloud (WCD) offers a scalable, managed environment. Learn how to set up a cloud cluster and get the API keys by following the [Weaviate Cluster Setup Guide](https://weaviate.io/developers/wcs/guides/create-instance).
 
 **🐳 Docker Deployment**
-Another local alternative is deploying Weaviate using Docker. For more details, follow the [How to install Verba with Docker](#how-to-install-verba-with-docker) section.
+Another local alternative is deploying Weaviate using Docker. For more details, follow the [How to install Vijil RAG Agent with Docker](#how-to-install-verba-with-docker) section.
 
-![Deployment in Verba](https://github.com/weaviate/Verba/blob/2.0.0/img/verba_deployment.png)
+![Deployment in Vijil RAG Agent](https://github.com/weaviate/Vijil RAG Agent/blob/2.0.0/img/verba_deployment.png)
 
 **⚙️ Custom Weaviate Deployment**
 
-If you're hosting Weaviate yourself, you can use the `Custom` deployment option in Verba. This will allow you to specify the URL, PORT, and API key of your Weaviate instance.
+If you're hosting Weaviate yourself, you can use the `Custom` deployment option in Vijil RAG Agent. This will allow you to specify the URL, PORT, and API key of your Weaviate instance.
 
 ## Ollama
 
-Verba supports Ollama models. Download and Install Ollama on your device (https://ollama.com/download). Make sure to install your preferred LLM using `ollama run <model>`.
+Vijil RAG Agent supports Ollama models. Download and Install Ollama on your device (https://ollama.com/download). Make sure to install your preferred LLM using `ollama run <model>`.
 
 Tested with `llama3`, `llama3:70b` and `mistral`. The bigger models generally perform better, but need more computational power.
 
@@ -227,17 +227,17 @@ ollama run llama3
 
 ## Unstructured
 
-Verba supports importing documents through Unstructured IO (e.g plain text, .pdf, .csv, and more). To use them you need the `UNSTRUCTURED_API_KEY` and `UNSTRUCTURED_API_URL` environment variable. You can get it from [Unstructured](https://unstructured.io/)
+Vijil RAG Agent supports importing documents through Unstructured IO (e.g plain text, .pdf, .csv, and more). To use them you need the `UNSTRUCTURED_API_KEY` and `UNSTRUCTURED_API_URL` environment variable. You can get it from [Unstructured](https://unstructured.io/)
 
 > UNSTRUCTURED_API_URL is set to `https://api.unstructuredapp.io/general/v0/general` by default
 
 ## AssemblyAI
 
-Verba supports importing documents through AssemblyAI (audio files or audio from video files). To use them you need the `ASSEMBLYAI_API_KEY` environment variable. You can get it from [AssemblyAI](https://assemblyai.com)
+Vijil RAG Agent supports importing documents through AssemblyAI (audio files or audio from video files). To use them you need the `ASSEMBLYAI_API_KEY` environment variable. You can get it from [AssemblyAI](https://assemblyai.com)
 
 ## OpenAI
 
-Verba supports OpenAI Models such as Ada, GPT3, and GPT4. To use them, you need to specify the `OPENAI_API_KEY` environment variable. You can get it from [OpenAI](https://openai.com/)
+Vijil RAG Agent supports OpenAI Models such as Ada, GPT3, and GPT4. To use them, you need to specify the `OPENAI_API_KEY` environment variable. You can get it from [OpenAI](https://openai.com/)
 
 You can also add a `OPENAI_BASE_URL` to use proxies such as LiteLLM (https://github.com/BerriAI/litellm)
 
@@ -247,8 +247,8 @@ OPENAI_BASE_URL=YOUR-OPENAI_BASE_URL
 
 ## HuggingFace
 
-If you want to use the HuggingFace Features, make sure to install the correct Verba package. It will install required packages to use the local embedding models.
-Please note that on startup, Verba will automatically download and install embedding models when used.
+If you want to use the HuggingFace Features, make sure to install the correct Vijil RAG Agent package. It will install required packages to use the local embedding models.
+Please note that on startup, Vijil RAG Agent will automatically download and install embedding models when used.
 
 ```bash
 pip install goldenverba[huggingface]
@@ -258,13 +258,13 @@ or
 pip install `.[huggingface]`
 ```
 
-> If you're using Docker, modify the `Dockerfile` accordingly. It's not possible to install a custom Verba installation if you pull the Docker Image from the Docker Hub, as of now, you'd need to install the Docker deployment from the source code and modify the `Dockerfile` beforehand.
+> If you're using Docker, modify the `Dockerfile` accordingly. It's not possible to install a custom Vijil RAG Agent installation if you pull the Docker Image from the Docker Hub, as of now, you'd need to install the Docker deployment from the source code and modify the `Dockerfile` beforehand.
 
 ## Groq
 
 To use Groq LPUs as generation engine, you need to get an API key from [Groq](https://console.groq.com/keys).
 
-> Although you can provide it in the graphical interface when Verba is up, it is recommended to specify it as `GROQ_API_KEY` environment variable before you launch the application.  
+> Although you can provide it in the graphical interface when Vijil RAG Agent is up, it is recommended to specify it as `GROQ_API_KEY` environment variable before you launch the application.  
 > It will allow you to choose the generation model in an up-to-date available models list.
 
 ## Novita
@@ -282,13 +282,13 @@ python3 -m virtualenv venv
 source venv/bin/activate
 ```
 
-2. **Install Verba**
+2. **Install Vijil RAG Agent**
 
 ```
 pip install goldenverba
 ```
 
-3. **Launch Verba**
+3. **Launch Vijil RAG Agent**
 
 ```
 verba start
@@ -296,7 +296,7 @@ verba start
 
 > You can specify the --port and --host via flags
 
-4. **Access Verba**
+4. **Access Vijil RAG Agent**
 
 ```
 Visit localhost:8000
@@ -306,10 +306,10 @@ Visit localhost:8000
 
 # How to build from Source
 
-1. **Clone the Verba repos**
+1. **Clone the Vijil RAG Agent repos**
 
 ```
-git clone https://github.com/weaviate/Verba.git
+git clone https://github.com/weaviate/Vijil RAG Agent.git
 ```
 
 2. **Initialize a new Python Environment**
@@ -319,13 +319,13 @@ python3 -m virtualenv venv
 source venv/bin/activate
 ```
 
-3. **Install Verba**
+3. **Install Vijil RAG Agent**
 
 ```
 pip install -e .
 ```
 
-4. **Launch Verba**
+4. **Launch Vijil RAG Agent**
 
 ```
 verba start
@@ -333,7 +333,7 @@ verba start
 
 > You can specify the --port and --host via flags
 
-5. **Access Verba**
+5. **Access Vijil RAG Agent**
 
 ```
 Visit localhost:8000
@@ -341,19 +341,19 @@ Visit localhost:8000
 
 6. (Optional) **Create .env file and add environment variables**
 
-# How to install Verba with Docker
+# How to install Vijil RAG Agent with Docker
 
-Docker is a set of platform-as-a-service products that use OS-level virtualization to deliver software in packages called containers. To get started with deploying Verba using Docker, follow the steps below. If you need more detailed instructions on Docker usage, check out the [Docker Curriculum](https://docker-curriculum.com/).
+Docker is a set of platform-as-a-service products that use OS-level virtualization to deliver software in packages called containers. To get started with deploying Vijil RAG Agent using Docker, follow the steps below. If you need more detailed instructions on Docker usage, check out the [Docker Curriculum](https://docker-curriculum.com/).
 
-You can use `docker pull semitechnologies/verba` to pull the latest Verba Docker Image. Please note, that by pulling directly from Docker Hub you're only able to install the vanilla Verba version that does not include packages e.g `HuggingFace`. If you want to use Docker and `HuggingFace` please follow the steps below.
+You can use `docker pull semitechnologies/verba` to pull the latest Vijil RAG Agent Docker Image. Please note, that by pulling directly from Docker Hub you're only able to install the vanilla Vijil RAG Agent version that does not include packages e.g `HuggingFace`. If you want to use Docker and `HuggingFace` please follow the steps below.
 
-To build the image yourself, you can clone the Verba repository and run `docker build -t verba .` inside the Verba directory.
+To build the image yourself, you can clone the Vijil RAG Agent repository and run `docker build -t verba .` inside the Vijil RAG Agent directory.
 
-0. **Clone the Verba repos**
-   Ensure you have Git installed on your system. Then, open a terminal or command prompt and run the following command to clone the Verba repository:
+0. **Clone the Vijil RAG Agent repos**
+   Ensure you have Git installed on your system. Then, open a terminal or command prompt and run the following command to clone the Vijil RAG Agent repository:
 
 ```
-git clone https://github.com/weaviate/Verba.git
+git clone https://github.com/weaviate/Vijil RAG Agent.git
 ```
 
 1. **Set necessary environment variables**
@@ -365,7 +365,7 @@ git clone https://github.com/weaviate/Verba.git
 > Please make sure to only add environment variables that you really need.
 
 2. **Deploy using Docker**
-   With Docker installed and the Verba repository cloned, navigate to the directory containing the Docker Compose file in your terminal or command prompt. Run the following command to start the Verba application in detached mode, which allows it to run in the background:
+   With Docker installed and the Vijil RAG Agent repository cloned, navigate to the directory containing the Docker Compose file in your terminal or command prompt. Run the following command to start the Vijil RAG Agent application in detached mode, which allows it to run in the background:
 
 ```bash
 
@@ -379,22 +379,22 @@ docker compose --env-file goldenverba/.env up -d --build
 
 ```
 
-This command will download the necessary Docker images, create containers, and start Verba.
+This command will download the necessary Docker images, create containers, and start Vijil RAG Agent.
 Remember, Docker must be installed on your system to use this method. For installation instructions and more details about Docker, visit the official Docker documentation.
 
-4. **Access Verba**
+4. **Access Vijil RAG Agent**
 
 - You can access your local Weaviate instance at `localhost:8080`
 
-- You can access the Verba frontend at `localhost:8000`
+- You can access the Vijil RAG Agent frontend at `localhost:8000`
 
-If you want your Docker Instance to install a specific version of Verba you can edit the `Dockerfile` and change the installation line.
+If you want your Docker Instance to install a specific version of Vijil RAG Agent you can edit the `Dockerfile` and change the installation line.
 
 ```
 RUN pip install -e '.'
 ```
 
-## Verba Walkthrough
+## Vijil RAG Agent Walkthrough
 
 ### Select your Deployment
 
@@ -406,13 +406,13 @@ You can skip this part by setting the `DEFAULT_DEPLOYMENT` environment variable 
 
 First thing you need to do is to add your data. You can do this by clicking on `Import Data` and selecting either `Add Files`, `Add Directory`, or `Add URL` tab. Here you can add all your files that you want to ingest.
 You can then configure every file individually by selecting the file and clicking on `Overview` or `Configure` tab.
-![Demo of Verba](https://github.com/weaviate/Verba/blob/2.0.0/img/verba_data.png)
+![Demo of Vijil RAG Agent](https://github.com/weaviate/Vijil RAG Agent/blob/2.0.0/img/verba_data.png)
 
 ### Query Your Data
 
 With Data imported, you can use the `Chat` page to ask any related questions. You will receive relevant chunks that are semantically relevant to your question and an answer generated by your choosen model. You can configure the RAG pipeline under the `Config` tab.
 
-![Demo of Verba](https://github.com/weaviate/Verba/blob/2.0.0/img/verba_rag.png)
+![Demo of Vijil RAG Agent](https://github.com/weaviate/Vijil RAG Agent/blob/2.0.0/img/verba_rag.png)
 
 ## Open Source Contribution
 
@@ -420,7 +420,7 @@ Your contributions are always welcome! Feel free to contribute ideas, feedback, 
 
 ### Project Architecture
 
-You can learn more about Verba's architecture and implementation in its [technical documentation](./TECHNICAL.md) and [frontend documentation](./FRONTEND.md). It's recommended to have a look at them before making any contributions.
+You can learn more about Vijil RAG Agent's architecture and implementation in its [technical documentation](./TECHNICAL.md) and [frontend documentation](./FRONTEND.md). It's recommended to have a look at them before making any contributions.
 
 ## Known Issues
 
@@ -431,13 +431,13 @@ You can learn more about Verba's architecture and implementation in its [technic
 
 - **Can I use pre-existing data from my Weaviate instance?**
 
-  - No, unfortunatley not. Verba requires the data to be in a specific format to work. And as of now, this is only possible by importing data through the Verba UI.
+  - No, unfortunatley not. Vijil RAG Agent requires the data to be in a specific format to work. And as of now, this is only possible by importing data through the Vijil RAG Agent UI.
 
-- **Is Verba Multi-Lingual?**
+- **Is Vijil RAG Agent Multi-Lingual?**
 
   - This depends on your choosen Embedding and Generation Model whether they support multi-lingual data.
 
-- **Can I use my Ollama Server with the Verba Docker?**
+- **Can I use my Ollama Server with the Vijil RAG Agent Docker?**
 
   - Yes, you can! Make sure the URL is set to: `OLLAMA_URL=http://host.docker.internal:11434`
   - If you're running on Linux, you might need to get the IP Gateway of the Ollama server: `OLLAMA_URL="http://YOUR-IP-OF-OLLAMA:11434"`
@@ -450,17 +450,17 @@ You can learn more about Verba's architecture and implementation in its [technic
 
   - You can use the port and host flag `verba start --port 9000 --host 0.0.0.0`
 
-- **Can multiple users use Verba at the same time? How about role based access?**
+- **Can multiple users use Vijil RAG Agent at the same time? How about role based access?**
 
-  - Verba is designed and optimized for single user usage only. There are no plans on supporting multiple users or role based access in the near future.
+  - Vijil RAG Agent is designed and optimized for single user usage only. There are no plans on supporting multiple users or role based access in the near future.
 
-- **Does Verba offer a API endpoint to use externally?**
+- **Does Vijil RAG Agent offer a API endpoint to use externally?**
 
-  - No, right now Verba does not offer any useful API endpoints to interact with the application. The current FastAPI setup is optimized for the internal communication between the frontend and backend. It is not recommended to use it as a API endpoint. There are plans to add user-friendly
+  - No, right now Vijil RAG Agent does not offer any useful API endpoints to interact with the application. The current FastAPI setup is optimized for the internal communication between the frontend and backend. It is not recommended to use it as a API endpoint. There are plans to add user-friendly
 
 - **How to connect to your custom OpenAI Server?**
 
-  - Set your custom OpenAI API Key and URL in the `.env` file, this will allow Verba to start up and retrieve the models from your custom OpenAI Server. `OPENAI_BASE_URL` is set to `https://api.openai.com/v1` by default.
+  - Set your custom OpenAI API Key and URL in the `.env` file, this will allow Vijil RAG Agent to start up and retrieve the models from your custom OpenAI Server. `OPENAI_BASE_URL` is set to `https://api.openai.com/v1` by default.
 
-- **How to upload custom JSON files to Verba?**
-  - Right now Verba does not support custom JSON structure. Instead the whole JSON will simply be dumped into the content field of the Verba document. You can read more about the Verba JSON Structure in the Technical Documentation [here](./TECHNICAL.md).
+- **How to upload custom JSON files to Vijil RAG Agent?**
+  - Right now Vijil RAG Agent does not support custom JSON structure. Instead the whole JSON will simply be dumped into the content field of the Vijil RAG Agent document. You can read more about the Vijil RAG Agent JSON Structure in the Technical Documentation [here](./TECHNICAL.md).

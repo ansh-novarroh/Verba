@@ -1106,7 +1106,7 @@ class EmbeddingManager:
         logger: LoggerManager,
     ) -> list[Document]:
         """Vectorizes chunks in batches
-        @parameter: documents : Document - Verba document
+        @parameter: documents : Document - Vijil RAG Agent document
         @returns Document - Document with vectorized chunks
         """
         try:

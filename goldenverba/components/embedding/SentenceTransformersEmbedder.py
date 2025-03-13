@@ -9,7 +9,7 @@ except Exception as e:
 
 class SentenceTransformersEmbedder(Embedding):
     """
-    SentenceTransformersEmbedder base class for Verba.
+    SentenceTransformersEmbedder base class for Vijil RAG Agent.
     """
 
     def __init__(self):

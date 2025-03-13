@@ -57,10 +57,10 @@ const InfoView: React.FC<InfoViewProps> = ({
   const resetVerba = async () => {
     const response = await deleteAllDocuments("ALL", credentials);
     if (response) {
-      addStatusMessage("Verba reset", "SUCCESS");
+      addStatusMessage("Vijil RAG reset", "SUCCESS");
       fetchMetadata();
     } else {
-      addStatusMessage("Failed to reset Verba", "ERROR");
+      addStatusMessage("Failed to reset Vijil RAG Agent", "ERROR");
     }
   };
 
@@ -105,7 +105,7 @@ const InfoView: React.FC<InfoViewProps> = ({
       </div>
       <div className="flex-grow overflow-y-auto">
         <div className="gap-4 flex flex-col p-4 text-text-verba">
-          <p className="font-bold text-lg">Resetting Verba</p>
+          <p className="font-bold text-lg">Resetting Vijil RAG Agent</p>
           <div className="flex flex-wrap gap-2 justify-between">
             <div className="flex flex-wrap gap-2">
               <VerbaButton
@@ -130,7 +130,7 @@ const InfoView: React.FC<InfoViewProps> = ({
               />
             </div>
           </div>
-          <p className="font-bold text-lg">Weaviate Information</p>
+          {/* <p className="font-bold text-lg">Weaviate Information</p>
 
           <div className="flex flex-col border-2 gap-2 border-bg-verba shadow-sm p-4 rounded-lg">
             <p className="text-sm lg:text-base font-semibold text-text-alt-verba">
@@ -219,13 +219,13 @@ const InfoView: React.FC<InfoViewProps> = ({
             ) : (
               <span className="loading loading-dots loading-sm mt-2"></span>
             )}
-          </div>
+          </div> */}
         </div>
       </div>
       <UserModalComponent
         modal_id="reset-documents"
         title="Reset Documents"
-        text="Are you sure you want to reset all documents? This will clear all documents and chunks from Verba."
+        text="Are you sure you want to reset all documents? This will clear all documents and chunks from Vijil RAG Agent."
         triggerAccept={resetDocuments}
         triggerString="Reset"
       />
@@ -238,8 +238,8 @@ const InfoView: React.FC<InfoViewProps> = ({
       />
       <UserModalComponent
         modal_id="reset-verba"
-        title="Reset Verba"
-        text="Are you sure you want to reset Verba? This will delete all collections related to Verba."
+        title="Reset Vijil RAG Agent"
+        text="Are you sure you want to reset Vijil RAG Agent? This will delete all collections related to Vijil RAG Agent."
         triggerAccept={resetVerba}
         triggerString="Reset"
       />

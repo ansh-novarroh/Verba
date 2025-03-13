@@ -16,7 +16,7 @@ from goldenverba.components.interfaces import Embedding
 
 class JSONChunker(Chunker):
     """
-    JSONChunker for Verba using LangChain.
+    JSONChunker for Vijil RAG Agent using LangChain.
     """
 
     def __init__(self):

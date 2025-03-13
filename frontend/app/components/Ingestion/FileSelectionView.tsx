@@ -223,7 +223,7 @@ const FileSelectionView: React.FC<FileSelectionViewProps> = ({
       <div className="bg-bg-alt-verba rounded-2xl flex gap-2 p-3 items-center justify-end lg:justify-between h-min w-full">
         <div className="hidden lg:flex gap-2 justify-start ">
           <InfoComponent
-            tooltip_text="Upload your data through this interface into Verba. You can select individual files, directories or add URL to fetch data from."
+            tooltip_text="Upload your data through this interface into Vijil RAG Agent. You can select individual files, directories or add URL to fetch data from."
             display_text="File Selection"
           />
         </div>

@@ -1,16 +1,16 @@
-# Verba - Frontend Documentation
+# Vijil RAG Agent - Frontend Documentation
 
-Verba's Frontend is a [NextJS](https://nextjs.org/) application used together with [TailwindCSS](https://tailwindcss.com/) and [DaisyUI](https://daisyui.com/).
+Vijil RAG Agent's Frontend is a [NextJS](https://nextjs.org/) application used together with [TailwindCSS](https://tailwindcss.com/) and [DaisyUI](https://daisyui.com/).
 
 ## 🚀 Setting Up the Frontend
 
-To get your local copy of the Verba frontend up and running, please follow these simple steps:
+To get your local copy of the Vijil RAG Agent frontend up and running, please follow these simple steps:
 
 1. Clone Repository
 
 ```git
 
-git clone https://github.com/weaviate/Verba.git
+git clone https://github.com/weaviate/Vijil RAG Agent.git
 
 ```
 

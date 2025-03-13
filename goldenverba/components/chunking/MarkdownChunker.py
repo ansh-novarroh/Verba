@@ -36,7 +36,7 @@ def get_header_values(
 
 class MarkdownChunker(Chunker):
     """
-    MarkdownChunker for Verba using LangChain.
+    MarkdownChunker for Vijil RAG Agent using LangChain.
     """
 
     def __init__(self):

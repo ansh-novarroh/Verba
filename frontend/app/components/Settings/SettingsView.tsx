@@ -49,7 +49,7 @@ const SettingsView: React.FC<SettingsViewProps> = ({
           <div className="bg-bg-alt-verba rounded-2xl flex gap-2 p-3 items-center justify-between h-min w-full">
             <div className="flex gap-2 justify-start ">
               <InfoComponent
-                tooltip_text="Customize Verba's Theme, reset collections, logout or report issues."
+                tooltip_text="Customize Vijil RAG agent's Theme."
                 display_text={"Settings"}
               />
             </div>
@@ -87,7 +87,7 @@ const SettingsView: React.FC<SettingsViewProps> = ({
               title="Report Issue"
               onClick={() =>
                 window.open(
-                  "https://github.com/weaviate/Verba/issues/new/choose",
+                  "https://github.com/weaviate/Vijil RAG Agent/issues/new/choose",
                   "_blank"
                 )
               }

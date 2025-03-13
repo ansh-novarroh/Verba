@@ -15,7 +15,7 @@ from goldenverba.components.interfaces import Embedding
 
 class CodeChunker(Chunker):
     """
-    CodeChunker for Verba using LangChain.
+    CodeChunker for Vijil RAG Agent using LangChain.
     """
 
     def __init__(self):

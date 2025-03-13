@@ -12,7 +12,7 @@ from goldenverba.components.interfaces import Embedding
 
 class RecursiveChunker(Chunker):
     """
-    RecursiveChunker for Verba using LangChain.
+    RecursiveChunker for Vijil RAG Agent using LangChain.
     """
 
     def __init__(self):

@@ -9,7 +9,7 @@ from goldenverba.components.interfaces import Embedding
 
 class SentenceChunker(Chunker):
     """
-    SentenceChunker for Verba built with spacy.
+    SentenceChunker for Vijil RAG Agent built with spacy.
     """
 
     def __init__(self):

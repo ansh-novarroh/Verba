@@ -1,10 +1,10 @@
-# Verba - Technical Documentation
+# Vijil RAG Agent - Technical Documentation
 
-This technical documentation is intended for developers who want to understand the inner workings of Verba. Please note that this document might be uncomplete and missing some parts. If you encounter any issues or have questions, please feel free to open an issue.
+This technical documentation is intended for developers who want to understand the inner workings of Vijil RAG Agent. Please note that this document might be uncomplete and missing some parts. If you encounter any issues or have questions, please feel free to open an issue.
 
 ## FastAPI Server
 
-Verba is served through a FastAPI server. The server is serving the static frontend files through the specified port. If you're modifying the frontend, you will need to rebuild the static files again. The frontend is sending API calls to itself which the FastAPI server handles. The server can handle multiple client connections which are handled by the `ClientManager` class.
+Vijil RAG Agent is served through a FastAPI server. The server is serving the static frontend files through the specified port. If you're modifying the frontend, you will need to rebuild the static files again. The frontend is sending API calls to itself which the FastAPI server handles. The server can handle multiple client connections which are handled by the `ClientManager` class.
 
 ### ClientManager
 
@@ -30,11 +30,11 @@ For handling large upload of files, the `BatchManager` class handles batches of 
 
 Every `generator` class has a `prepare_messages` method. This method is used to format the messages that are sent to the LLM. The position of the context in the messages is important because it determines where the context is placed in the conversation.
 
-### How to upload a JSON file to Verba?
+### How to upload a JSON file to Vijil RAG Agent?
 
-## Verba JSON Structure
+## Vijil RAG Agent JSON Structure
 
-A Verba Document can be created from a JSON object. The JSON object is converted to a Verba Document object and then uploaded to the vector database. Here's the general structure of a Verba Document (you can also find the implementation in the `Document.py` file):
+A Vijil RAG Agent Document can be created from a JSON object. The JSON object is converted to a Vijil RAG Agent Document object and then uploaded to the vector database. Here's the general structure of a Vijil RAG Agent Document (you can also find the implementation in the `Document.py` file):
 
 ```python
 {
@@ -51,5 +51,5 @@ A Verba Document can be created from a JSON object. The JSON object is converted
 
 ## Custom JSON Structure
 
-There is currently no support for custom JSON structure. Instead the whole JSON will simply be dumped into the content field of the Verba document.
+There is currently no support for custom JSON structure. Instead the whole JSON will simply be dumped into the content field of the Vijil RAG Agent document.
 There are plans to add support for custom JSON structure in the future.

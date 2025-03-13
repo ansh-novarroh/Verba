@@ -1,10 +1,10 @@
 # Installing Python and Setting Up a Virtual Environment
 
-Before you can use Verba, you'll need to ensure that `Python >=3.10.0` is installed on your system and that you can create a virtual environment for a safer and cleaner project setup.
+Before you can use Vijil RAG Agent, you'll need to ensure that `Python >=3.10.0` is installed on your system and that you can create a virtual environment for a safer and cleaner project setup.
 
 ## Installing Python
 
-Python is required to run Verba. If you don't have Python installed, follow these steps:
+Python is required to run Vijil RAG Agent. If you don't have Python installed, follow these steps:
 
 ### For Windows:
 
@@ -65,6 +65,6 @@ venv\Scripts\activate.bat
 source venv/bin/activate
 ```
 
-Once your virtual environment is activated, you'll see its name in the terminal prompt. Now you're ready to install Verba using the steps provided in the Quickstart sections.
+Once your virtual environment is activated, you'll see its name in the terminal prompt. Now you're ready to install Vijil RAG Agent using the steps provided in the Quickstart sections.
 
-> Remember to deactivate the virtual environment when you're done working with Verba by simply running deactivate in the terminal.
+> Remember to deactivate the virtual environment when you're done working with Vijil RAG Agent by simply running deactivate in the terminal.

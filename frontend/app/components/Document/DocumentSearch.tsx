@@ -160,7 +160,7 @@ const DocumentSearch: React.FC<DocumentSearchComponentProps> = ({
       <div className="bg-bg-alt-verba rounded-2xl flex gap-2 p-3 items-center justify-between h-min w-full">
         <div className="hidden lg:flex gap-2 justify-start w-[8vw]">
           <InfoComponent
-            tooltip_text="Search and inspect different documents imported into Verba"
+            tooltip_text="Search and inspect different documents imported into Vijil RAG Agent"
             display_text="Search"
           />
         </div>

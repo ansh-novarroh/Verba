@@ -5,7 +5,7 @@ from goldenverba.components.document import Document
 
 class GoogleEmbedder(Embedder):
     """
-    GoogleEmbedder for Verba.
+    GoogleEmbedder for Vijil RAG Agent.
     """
 
     def __init__(self):
@@ -22,7 +22,7 @@ class GoogleEmbedder(Embedder):
         logging: list[dict],
     ) -> bool:
         """Embed verba documents and its chunks to Weaviate
-        @parameter: documents : list[Document] - List of Verba documents
+        @parameter: documents : list[Document] - List of Vijil RAG Agent documents
         @parameter: client : Client - Weaviate Client
         @parameter: batch_size : int - Batch Size of Input
         @returns bool - Bool whether the embedding what successful.

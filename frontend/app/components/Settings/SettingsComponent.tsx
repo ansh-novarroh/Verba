@@ -263,7 +263,7 @@ const SettingsComponent: React.FC<SettingsComponentProps> = ({
       </div>
       <div className="flex-grow overflow-y-auto">
         <div className="gap-4 flex flex-col p-4">
-          <p className="font-bold">Customize Logo</p>
+          {/* <p className="font-bold">Customize Logo</p>
           {Object.entries(selectedTheme)
             .filter(([_, settingValue]) => settingValue.type === "image")
             .map(([key, settingValue]) =>
@@ -274,7 +274,7 @@ const SettingsComponent: React.FC<SettingsComponentProps> = ({
             .filter(([_, settingValue]) => settingValue.type === "text")
             .map(([key, settingValue]) =>
               renderSettingComponent(key, settingValue)
-            )}
+            )} */}
           <p className="font-bold mt-4">Customize Font</p>
           {Object.entries(selectedTheme)
             .filter(([_, settingValue]) => settingValue.type === "select")

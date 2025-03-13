@@ -51,7 +51,7 @@ export const detectHost = async (): Promise<string> => {
     return root;
   }
 
-  throw new Error("Both health checks failed, please check the Verba Server");
+  throw new Error("Both health checks failed, please check the Vijil RAG Agent Server");
 };
 
 export const fetchData = async <T>(endpoint: string): Promise<T | null> => {

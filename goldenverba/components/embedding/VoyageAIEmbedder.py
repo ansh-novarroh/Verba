@@ -12,7 +12,7 @@ from goldenverba.components.util import get_environment
 
 
 class VoyageAIEmbedder(Embedding):
-    """VoyageAIEmbedder for Verba."""
+    """VoyageAIEmbedder for Vijil RAG Agent."""
 
     def __init__(self):
         super().__init__()

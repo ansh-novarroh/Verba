@@ -16,7 +16,7 @@ import numpy as np
 
 class SemanticChunker(Chunker):
     """
-    SemanticChunker for Verba based on https://github.com/FullStackRetrieval-com/RetrievalTutorials/blob/main/tutorials/LevelsOfTextSplitting/5_Levels_Of_Text_Splitting.ipynb
+    SemanticChunker for Vijil RAG Agent based on https://github.com/FullStackRetrieval-com/RetrievalTutorials/blob/main/tutorials/LevelsOfTextSplitting/5_Levels_Of_Text_Splitting.ipynb
     """
 
     def __init__(self):
