@@ -87,10 +87,10 @@ if production != "Production":
         BasicReader(),
         HTMLReader(),
         GitReader(),
-        UnstructuredReader(),
-        AssemblyAIReader(),
+        # UnstructuredReader(),
+        # AssemblyAIReader(),
         FirecrawlReader(),
-        UpstageDocumentParseReader(),
+        # UpstageDocumentParseReader(),
     ]
     chunkers = [
         TokenChunker(),
@@ -126,10 +126,10 @@ else:
         BasicReader(),
         HTMLReader(),
         GitReader(),
-        UnstructuredReader(),
-        AssemblyAIReader(),
+        #UnstructuredReader(),
+        #AssemblyAIReader(),
         FirecrawlReader(),
-        UpstageDocumentParseReader(),
+        #UpstageDocumentParseReader(),
     ]
     chunkers = [
         TokenChunker(),

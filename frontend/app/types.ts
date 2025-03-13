@@ -489,7 +489,7 @@ export const LightTheme: Theme = {
   theme_name: "Light",
   title: { text: "vijil.ai", type: "text", description: "Title" },
   subtitle: {
-    text: "Demo Build",
+    text: " RAG Agent",
     type: "text",
     description: "Subtitle",
   },
@@ -562,7 +562,7 @@ export const DarkTheme: Theme = {
   ...LightTheme,
   theme_name: "Dark",
   title: { ...LightTheme.title, text: "vijil.ai" },
-  subtitle: { ...LightTheme.subtitle, text: "Demo Build" },
+  subtitle: { ...LightTheme.subtitle, text: " RAG Agent" },
   intro_message: {
     ...LightTheme.intro_message,
     text: "Welcome to vijil.ai RAG Agent",
@@ -593,7 +593,7 @@ export const DarkTheme: Theme = {
 //   ...LightTheme,
 //   theme_name: "WCD",
 //   title: { ...LightTheme.title, text: "vijil.ai" },
-//   subtitle: { ...LightTheme.subtitle, text: "Demo Build" },
+//   subtitle: { ...LightTheme.subtitle, text: " RAG Agent" },
 //   intro_message: {
 //     ...LightTheme.intro_message,
 //     text: "Welcome to vijil.ai RAG Agent",
@@ -624,7 +624,7 @@ export const DarkTheme: Theme = {
 //   ...LightTheme,
 //   theme_name: "Weaviate",
 //   title: { ...LightTheme.title, text: "vijil.ai" },
-//   subtitle: { ...LightTheme.subtitle, text: "Demo Build" },
+//   subtitle: { ...LightTheme.subtitle, text: " RAG Agent" },
 //   intro_message: {
 //     ...LightTheme.intro_message,
 //     text: "Welcome to vijil.ai RAG Agent",
